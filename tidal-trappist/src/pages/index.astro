@@ -24,17 +24,22 @@ const projects = (await getCollection('work'))
 				<Hero
 					title="Join us this September!"
 					tagline=""
-					align="start"
+					align="center"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill>
+							<Icon icon="backpack" size="1.33em" /> 
+							<a href="/nursery/">Nursery School</a>
+						</Pill>
+						<Pill>
+							<Icon icon="sun" size="1.33em" /> 
+							<a href="/summer/">Summer Camp</a>
+						</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="One teachear and three kids running in a playground"
 					width="685"
 					height="500"
 					src="/assets/hero.png"
@@ -51,9 +56,22 @@ const projects = (await getCollection('work'))
 		align-items: center;
 		gap: 1rem;
 	}
+	.hero a {
+		color: var(--gradient-subtle);
+		text-decoration: none;
+		transition: color var(--theme-transition);
+	}
+
+	.hero a:hover,
+	.hero a:focus {
+		color: var(--gray-0);
+	}
 
 	.roles {
-		display: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin-top: 0.5rem;
 	}
 
 	.hero img {
@@ -74,6 +92,7 @@ const projects = (await getCollection('work'))
 		.roles {
 			margin-top: 0.5rem;
 			display: flex;
+			flex-direction: row;
 			gap: 0.5rem;
 		}
 
@@ -162,28 +181,6 @@ const projects = (await getCollection('work'))
 
 		.cta {
 			grid-area: cta;
-		}
-	}
-
-	/* ====================================================== */
-
-	.mention-card {
-		display: flex;
-		height: 7rem;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		border: 1px solid var(--gray-800);
-		border-radius: 1.5rem;
-		color: var(--gray-300);
-		background: var(--gradient-subtle);
-		box-shadow: var(--shadow-sm);
-	}
-
-	@media (min-width: 50em) {
-		.mention-card {
-			border-radius: 1.5rem;
-			height: 9.5rem;
 		}
 	}
 </style>

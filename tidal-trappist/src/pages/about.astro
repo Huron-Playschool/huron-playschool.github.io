@@ -1,58 +1,126 @@
 ---
-import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import TwoColumns from '../components/TwoColumns.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Huron Playschool" description="About Huron Playschool">
 	<div class="stack gap-20">
 		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+			<h1>About Huron Playschool</h1>
+			<div class="content">
+				<TwoColumns>
+					<div slot="left">
+						<section>
+							<p>
+								Welcome to Huron Playschool Co-operative! We are a non-denominational, co-operative nursery school and after school care centre located in the Annex neighbourhood of Toronto, Ontario. In our <a href="/nursery/">Nursery Program</a>, we offer a gentle start to a child's school years.
+							</p>
+							<p>
+								Huron Playschool has been a vital part of the Annex Community since 1968. Over the last 50 years, families and teachers have worked together to offer nursery school programs, summer camps, childcare and after school programs.
+							</p>
+							<p>
+								In our co-operative playschool, the teacher and parents work together closely. The aim of our program is to help build each child's self-esteem and to develop their individual social, intellectual and physical skills. We believe children are competent, capable of complex thinking, curious and rich in potential. Each child should feel that they belong and are a valuable contributor to their surroundings, and each child deserves the opportunity to succeed.
+							</p>
+							<p>
+								The co-operative playschool environment encourages children (and parents) to think of creative, new ways of problem solving and collaborating with others. It is a ready-made support network for both parents and children.
+							</p>
+							<p>
+								Huron Playschool Co-operative is a member of the Parent Co-operative Preschool Corporation (<a href="http://www.pcpcontario.org/" target="_blank">PCPC</a>).
+							</p>
+						</section>
+					</div>
+					<div slot="right">
+						&nbsp;
+					</div>
+				</TwoColumns>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
+				<h3>Our Philosophy</h3>
+				<TwoColumns>
+					<div slot="left">
+						&nbsp;
+					</div>
+
+					<div slot="right">
+						<section>
+							<p>
+								Huron Playschool Co-operative, through staff and the active involvement of parents, provides a safe and nurturing environment where children are encouraged to develop their cognitive, social, emotional and creative capacities through play. 
+							</p>
+							<p>
+								Parents are responsible for everything from maintenance to the budget. Co-operating parents participate in many ways including assisting in the classroom during regularly scheduled “co-op days”, provide a snack for the class in scheduled rotation, and are asked to take on one administrative duty.
+							</p>
+							<p>
+								Being a part of a co-operative demands time and energy, but the rewards are well worth the investment! The parents at Huron Playschool Co-operative learn from each other, support each other and develop close and lasting friendships. It is a unique experience for children and for parents.
+							</p>
+						</section>
+					</div>
+				</TwoColumns>
+
+				<h3>Program Foundations</h3>
+				<TwoColumns>
+					<div slot="left">
+						<section>
+							<p>
+								We aim to provide a gentle start to a child's school years. As a co-operative school, parents and teachers work closely together to help develop each child's confidence and independence as well as social, intellectual, and physical skills.
+							</p>
+							<p>
+								Our program foundations are:
+							</p>
+							<p>
+								<b>Belonging</b>: Encouraging each child's relationships with other people, providing them with a sense of being valued and making contributions as part of the group, the community, and the natural world.
+							</p>
+							<p>
+								<b>Well-Being</b>: Addressing the importance of physical and mental health and wellness, and incorporating capacities such as self-care, sense of self, and self-regulation skills.
+							</p>
+							<p>
+								<b>Engagement</b>: Encouraging active involvement and focus. When children are able to explore the world around them, with their natural curiosity and exuberance, they are fully engaged. This promotes the development of problem solving, creative thinking abilities, and innovative skills, which are essential for learning and success in school and beyond.
+							</p>
+							<p>
+								<b>Expression</b>: Recognizing that expression and communication takes many forms. Through their bodies, words, and use of materials, children develop capacities for increasingly complex communication. Opportunities to explore a variety of materials supports creativity, problem solving and mathematical behaviours. Language-rich environments supports growing communication skills, which are the foundations of literacy.
+							</p>
+						</section>
+					</div>
+					<div slot="right">
+						&nbsp;
+					</div>
+				</TwoColumns>
+
+
+				<h3>Our Space</h3>
+				<TwoColumns>
+					<div slot="left">
+						&nbsp;
+					</div>
+
+					<div slot="right">
+						<section>
+							<p>
+								Our classroom setting is a very large “L” shaped room that has allowed us to set up an incredible multi-use space. We also have a separate office/kitchen (for preparing meals and for administrative work) and a children's washroom with two toilets. 
+							</p>
+							<p>
+							Within our multi-use classroom we have:
+							</p>
+							<ul>
+								<li>A large arts and crafts area (with lots of paper, markers, scissors and tape and even a separate easel for paint fun)</li>
+								<li>A sensory area (perfect for our playdough or playfoam exploration)</li>
+								<li>A dramatic centre (with puppets, a toy kitchen, and lots of baby dolls)</li>
+								<li>An area for building (with many different sizes and shapes of wooden blocks)</li>
+								<li>A reading area (with a big comfy couch, bean bags and lots of books)</li>
+								<li>A puzzle and fine motor toy area (with legos, trains, gears, and towers to stack)</li>
+								<li>A science area (past experiments have included oil and water, alka-seltzer bubbles, and lots of fun cooking adventures)</li>
+								<li>Water and sand tables (which we love to add toys, beads and scoops to)</li>
+								<li>A gross motor area (with soft mats, a slide/rocking boat, hopscotch and more)</li>
+								<li>Lots of tables and chairs for meals and for focused activities</li>
+								<li>Child-sized sinks for easy clean up</li>
+							</ul>
+							<p>
+								Along with spending time in our classroom, we love to spend as much time as we can outdoors! Our location gives us access to many nearby green spaces (Robarts Library, Innis College, Woodsworth College, New College, other University courtyards) and we also have responsibility for the garden behind the church where we love to spend our time getting dirty and tending to the seeds we plant. We spend our mornings and afternoons (weather permitting) at the enclosed park across from the school at the corner of Huron & Washington.
+							</p>
+						</section>
+					</div>
+				</TwoColumns>
+
+
+
+			</div>
 		</main>
 	</div>
 </BaseLayout>
@@ -62,6 +130,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		display: flex;
 		flex-direction: column;
 		gap: 3.5rem;
+	}
+
+	ul {
+		padding-bottom: 2rem;
+	}
+
+	p {
+		text-align: justify;
+		hyphens: auto;
+		padding-bottom: 2rem;
+		font-size: var(--text-lg);
+	}
+
+	h3 {
+		padding-top: 2rem;
 	}
 
 	img {
@@ -101,7 +184,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	@media (min-width: 50em) {
 		.about {
 			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
+			grid-template-columns: 1fr 80% 1fr;
 		}
 
 		.about > :global(:first-child) {
