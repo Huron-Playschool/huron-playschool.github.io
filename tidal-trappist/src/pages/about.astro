@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TwoColumns from '../components/TwoColumns.astro';
+import { ACTION_ERROR_CODES } from 'astro:actions';
 ---
 
 <BaseLayout title="About | Huron Playschool" description="About Huron Playschool">
@@ -29,14 +30,24 @@ import TwoColumns from '../components/TwoColumns.astro';
 						</section>
 					</div>
 					<div slot="right">
-						&nbsp;
+						<img
+							alt=""
+							width="685"
+							height="500"
+							src="/assets/ncts-hanging.jpg"
+						/>
 					</div>
 				</TwoColumns>
 
 				<h3>Our Philosophy</h3>
 				<TwoColumns>
 					<div slot="left">
-						&nbsp;
+						<img
+							alt=""
+							width="685"
+							height="500"
+							src="/assets/teacher_student.jpg"
+						/>
 					</div>
 
 					<div slot="right">
@@ -79,7 +90,12 @@ import TwoColumns from '../components/TwoColumns.astro';
 						</section>
 					</div>
 					<div slot="right">
-						&nbsp;
+						<img
+							alt=""
+							width="685"
+							height="500"
+							src="/assets/playing.jpg"
+						/>
 					</div>
 				</TwoColumns>
 
@@ -145,11 +161,12 @@ import TwoColumns from '../components/TwoColumns.astro';
 		text-align: justify;
 		hyphens: auto;
 		padding-bottom: 2rem;
-		font-size: var(--text-lg);
+		font-size: var(--text-base);
 	}
 
 	h3 {
 		padding-top: 2rem;
+		padding-bottom: 1rem;
 	}
 
 	img {
@@ -198,7 +215,6 @@ import TwoColumns from '../components/TwoColumns.astro';
 
 		section {
 			display: contents;
-			font-size: var(--text-lg);
 		}
 	}
 </style>
