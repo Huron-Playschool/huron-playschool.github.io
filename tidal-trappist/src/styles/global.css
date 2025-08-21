@@ -151,6 +151,14 @@ img {
 	height: auto;
 }
 
+p {
+	text-align: justify;
+	hyphens: auto;
+	padding-bottom: 2rem;
+	font-size: var(--text-base);
+}
+
+
 a {
 	color: var(--link-color);
 }

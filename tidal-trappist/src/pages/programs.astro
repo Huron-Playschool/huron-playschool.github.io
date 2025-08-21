@@ -1,32 +1,49 @@
 ---
-import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import '../styles/nursery.css';
+import '../styles/programs.css';
 import TwoColumns from '../components/TwoColumns.astro';
 ---
 
 <BaseLayout
-	title="Nursery School | Huron Playschool"
-	description="Learn about Huron Playschool's Nursery School program"
+	title="Our programs | Huron Playschool"
+	description="Learn about Huron Playschool's programs"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-10">
-			<Hero
-				title="Nursery School"
-				tagline="Full Day or Morning options for children aged 2 to 6 years"
-				align="center"
-			/>
-			<p>
-				Our students are encouraged to care for each other and their environment, play co-operatively, develop their independence, and communicate their needs and interests. Children learn at the Playschool through outdoor play, exploration in nature, gross motor movement, art, and sensory and imaginative play. The program includes regular excursions to local green spaces and parks. Field trips may include outings to libraries, museums, and special events.
-			</p>				
+			<h1>Our programs</h1>
+			<TwoColumns>
+				<section slot="left">
+					<h3>Our Approach</h3>
+					<p>
+						Our students are encouraged to care for each other and their environment, play co-operatively, develop their independence, and communicate their needs and interests.
+					</p>
+					<p>
+						Children learn at the Playschool through outdoor play, exploration in nature, gross motor movement, art, and sensory and imaginative play. The program includes regular excursions to local green spaces and parks. Field trips may include outings to libraries, museums, and special events.
+					</p>
+					<p>
+						Enrollment for any of our programs may begin at any time during the school year, and fees will be prorated accordingly.
+					</p>
+				</section>
+				<section slot="right">
+					<img
+						class="shadowbox"
+						alt=""
+						width="685"
+						height="500"
+						src="/assets/crayons.jpg"
+						alt="Children playing with crayons"
+					/>
+				</section>
+			</TwoColumns>
 
+			<h2>Nursery School</h2>
 			
 			<p>
-				The school can enrol children in the nursery program for mornings only or for the full day. The program runs from September to June, with a two-week break during winter. The school also offers a summer program to current students. Enrollment for any of our programs may begin at any time during the school year, and fees will be prorated accordingly.
+				The program runs from September to June, with a two-week break during winter and it's aimed at children aged 2 to 6 years.
 			</p>
 			
 
-			<h2>Full Day Program</h2>
+			<h3>Full Day Program</h3>
 			<TwoColumns>
 					<section slot="left">
 						<p>
@@ -72,9 +89,9 @@ import TwoColumns from '../components/TwoColumns.astro';
 							</table>
 						</section>
 					</div>
-				</TwoColumns>
+			</TwoColumns>
 
-			<h2>Morning Program</h2>
+			<h3>Morning Program</h3>
 			<TwoColumns>
 				<section slot="left">
 					<p>
@@ -116,6 +133,14 @@ import TwoColumns from '../components/TwoColumns.astro';
 					</table>
 				</section>
 			</TwoColumns>
+
+			<h2>Summer Camp</h2>
+			<p>
+				Our summer camp program is designed to be fun and engaging for all children, with an increased focus on outdoor play and exploration, leveraging the green spaces and playgrounds located near the school. Wednesdays include outdoor waterplay (sprinkler, squeeze bottles, water toys, etc). Each week will have a theme as well.
+			</p>				
+			<p>
+				The school accepts students for summer camps on a monthly basis during July and August, with a break before the regular program starts. Our summer camp runs as a full day program and does not have a built-in naptime. It is available for children aged 2.5 to 6 years. 
+			</p>
 
 
 

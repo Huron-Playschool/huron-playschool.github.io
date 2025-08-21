@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TwoColumns from '../components/TwoColumns.astro';
+import '../styles/about.css';
 ---
 
 <BaseLayout title="About | Huron Playschool" description="About Huron Playschool">
@@ -12,16 +13,10 @@ import TwoColumns from '../components/TwoColumns.astro';
 					<div slot="left">
 						<section>
 							<p>
-								Welcome to Huron Playschool Co-operative! We are a secular co-operative nursery school and after school care centre located in the Annex neighbourhood of Toronto, Ontario. In our <a href="/nursery/">Nursery Program</a>, we offer a gentle start to a child's school years.
+								Welcome to Huron Playschool Co-operative! We are a secular co-operative school located in the Annex neighbourhood of Toronto, Ontario. We have been a vital part of the community since 1968, offering nursery school programs, summer camps, childcare, and after-school programs. Please check our current <a href="/programs">programs</a> for more information.
 							</p>
 							<p>
-								Huron Playschool has been a vital part of the Annex Community since 1968. Over the last 50 years, families and teachers have worked together to offer nursery school programs, summer camps, childcare and after school programs.
-							</p>
-							<p>
-								In our co-operative playschool, the teacher and parents work together closely. The aim of our program is to help build each child's self-esteem and to develop their individual social, intellectual and physical skills. We believe children are competent, capable of complex thinking, curious and rich in potential. Each child should feel that they belong and are a valuable contributor to their surroundings, and each child deserves the opportunity to succeed.
-							</p>
-							<p>
-								The co-operative playschool environment encourages children (and parents) to think of creative, new ways of problem solving and collaborating with others. It is a ready-made support network for both parents and children.
+								In our co-operative playschool, the staff and parents work closely together to help build each child's self-esteem and to develop their social, intellectual, and physical skills. We believe children are competent, capable of complex thinking, curious, and rich in potential. <b>Each child should feel that they belong.</b>
 							</p>
 							<p>
 								Huron Playschool Co-operative is a member of the Parent Co-operative Preschool Corporation (<a href="http://www.pcpcontario.org/" target="_blank">PCPC</a>).
@@ -30,6 +25,7 @@ import TwoColumns from '../components/TwoColumns.astro';
 					</div>
 					<div slot="right">
 						<img
+							class="shadowbox"
 							alt=""
 							width="685"
 							height="500"
@@ -43,6 +39,7 @@ import TwoColumns from '../components/TwoColumns.astro';
 				<TwoColumns>
 					<div slot="left">
 						<img
+							class="shadowbox"
 							alt="Adult and a kid in a playground playing with woodchips"
 							width="685"
 							height="500"
@@ -53,7 +50,7 @@ import TwoColumns from '../components/TwoColumns.astro';
 					<div slot="right">
 						<section>
 							<p>
-								Huron Playschool Co-operative, through staff and the active involvement of parents, provides a safe and nurturing environment where children are encouraged to develop their cognitive, social, emotional and creative capacities through play. 
+								Huron Playschool Co-operative, through our staff and the active involvement of the parents, provides a safe and nurturing environment where children are encouraged to develop their cognitive, social, emotional, and creative capacities through play. 
 							</p>
 							<p>
 								Parents are responsible for everything from maintenance to the budget. Co-operating parents participate in many ways including assisting in the classroom during regularly scheduled “co-op days”, provide a snack for the class in scheduled rotation, and are asked to take on one administrative duty.
@@ -91,6 +88,7 @@ import TwoColumns from '../components/TwoColumns.astro';
 					</div>
 					<div slot="right">
 						<img
+							class="shadowbox"
 							alt="Adult and a child playing ball together"
 							width="685"
 							height="500"
@@ -104,6 +102,7 @@ import TwoColumns from '../components/TwoColumns.astro';
 				<TwoColumns>
 					<div slot="left">
 						<img
+							class="shadowbox"
 							alt="Classroom size with cubbies, cots, and a drawing board"
 							width="685"
 							height="500"
@@ -138,83 +137,8 @@ import TwoColumns from '../components/TwoColumns.astro';
 						</section>
 					</div>
 				</TwoColumns>
-
-
-
 			</div>
 		</main>
 	</div>
 </BaseLayout>
 
-<style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
-
-	ul {
-		padding-bottom: 2rem;
-	}
-
-	p {
-		text-align: justify;
-		hyphens: auto;
-		padding-bottom: 2rem;
-		font-size: var(--text-base);
-	}
-
-	h3 {
-		padding-top: 2rem;
-		padding-bottom: 1rem;
-	}
-
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
-
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
-
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
-
-	.content {
-		grid-column: 2 / 4;
-	}
-
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
-
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
-
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 90% 1fr;
-		}
-
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
-
-		section {
-			display: contents;
-		}
-	}
-</style>
