@@ -36,8 +36,8 @@ import TwoColumns from '../components/TwoColumns.astro';
 				</section>
 			</TwoColumns>
 
-			<h2>Nursery School</h2>
-			
+			<h2 id="nursery">Nursery School</h2>
+
 			<p>
 				The program runs from September to June, with a two-week break during winter and it's aimed at children aged 2 to 6 years.
 			</p>
@@ -134,13 +134,29 @@ import TwoColumns from '../components/TwoColumns.astro';
 				</section>
 			</TwoColumns>
 
-			<h2>Summer Camp</h2>
-			<p>
-				Our summer camp program is designed to be fun and engaging for all children, with an increased focus on outdoor play and exploration, leveraging the green spaces and playgrounds located near the school. Wednesdays include outdoor waterplay (sprinkler, squeeze bottles, water toys, etc). Each week will have a theme as well.
-			</p>				
-			<p>
-				The school accepts students for summer camps on a monthly basis during July and August, with a break before the regular program starts. Our summer camp runs as a full day program and does not have a built-in naptime. It is available for children aged 2.5 to 6 years. 
-			</p>
+			<h2 id="summer">Summer Camp</h2>
+			<TwoColumns>
+				<section slot="left">
+					<h3>Summer fun!</h3>
+					<p>
+						Our summer camp program is designed to be fun and engaging for all children, with an increased focus on outdoor play and exploration, leveraging the green spaces and playgrounds located near the school. Wednesdays include outdoor waterplay (sprinkler, squeeze bottles, water toys, etc). Each week will have a theme as well.
+					</p>				
+					<p>
+						The school accepts students for summer camps on a monthly basis during July and August, with a break before the regular program starts. Our summer camp runs as a full day program and does not have a built-in naptime. It is available for children aged 2.5 to 6 years. 
+					</p>
+
+				</section>
+				<section slot="right">
+					<img
+						class="shadowbox"
+						alt=""
+						width="685"
+						height="500"
+						src="/assets/ncts-hanging.jpg"
+						alt="Children hanging upside down in a playground ladder"
+					/>
+				</section>
+			</TwoColumns>
 
 
 
