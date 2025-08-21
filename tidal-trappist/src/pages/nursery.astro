@@ -1,7 +1,8 @@
 ---
-import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/nursery.css';
+import TwoColumns from '../components/TwoColumns.astro';
 ---
 
 <BaseLayout
@@ -16,67 +17,68 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				align="center"
 			/>
 			<p>
-				Families can enrol in the nursery program for mornings only or for the full day. Children are encouraged to care for each other and their environment, play co-operatively, develop their independence, and communicate their needs and interests. Children learn at Playschool through outdoor play, exploration in nature, gross motor movement, art, and sensory and imaginative play. We have a lot of fun together!
-			</p>
+				Our students are encouraged to care for each other and their environment, play co-operatively, develop their independence, and communicate their needs and interests. Children learn at the Playschool through outdoor play, exploration in nature, gross motor movement, art, and sensory and imaginative play. The program includes regular excursions to local green spaces and parks. Field trips may include outings to libraries, museums, and special events.
+			</p>				
+
+			
 			<p>
-				The programs includes regular excursions to local green spaces and parks. We will soon return to including a weekly movement and music class in the morning program and visits from science educators, animal handlers and others as it is safe to do so based on Covid regulations. Regular field trips will include outings to libraries, museums, and special events.
+				The school can enrol children in the nursery program for mornings only or for the full day. The program runs from September to June, with a two-week break during winter. The school also offers a summer program to current students. Enrollment for any of our programs may begin at any time during the school year, and fees will be prorated accordingly.
 			</p>
-			<p>
-				Our Nursery School runs from September - June. The centre is closed for two weeks during winter break, which aligns with Toronto Public School's schedule, and during regular statutory holidays. While our regular daycare program does not run during the summer, we do offer monthly summer school enrolment to existing students with the exception of the last two weeks in August. Enrolment for any of our programs may begin at any time during the school year, and fees will be prorated accordingly.
-			</p>
-			</p>
+			
 
-			<h2 style="margin: auto">Full Day Program</h2>
-			<div class="hero">
-				<div class="roles">
-					<p>
-						The Full Day Program has space for 16 children supervised by one RECE and two duty parents (or one teacher). Our days follow a loose routine that enables children to familiarize themselves with school life.
-					</p>
-					<p>
-					Each day includes:
-					</p>
-					<ul>
-						<li>free play and planned activities</li>
-						<li>circle-time with music, storytelling and movement activities</li>
-						<li>healthy morning snack</li>
-						<li>healthy lunch</li>
-						<li>rest period (or naps for those who need it)</li>
-						<li>outdoor play in the local park/green spaces</li>
-					</ul>	
-				</div>
+			<h2>Full Day Program</h2>
+			<TwoColumns>
+					<section slot="left">
+						<p>
+							The Full Day Program has space for 16 children, supervised by one Registered Early Childhood Educator (RECE) and two duty parents (or one teacher). Our days follow a flexible routine that helps children become familiar with school life.
+						</p>
+						<p>
+						Each day includes:
+						</p>
+						<ul>
+							<li>free play and planned activities</li>
+							<li>circle-time with music, storytelling and movement activities</li>
+							<li>healthy morning snack</li>
+							<li>healthy lunch</li>
+							<li>rest period (or naps for those who need it)</li>
+							<li>outdoor play in the local park/green spaces</li>
+						</ul>	
+					</section>
 
-				<div class="roles">
-					<table>
-						<tbody>
-							<tr>
-								<td>Drop off</td>
-								<td>9:00 AM</td>
-							</tr>
-							<tr>
-								<td>Pick up</td>
-								<td>2:45 PM</td>
-							</tr>
-							<tr>
-								<td>Days per week</td>
-								<td>5</td>
-							</tr>										
-							<tr>
-								<td>Monthly fee</td>
-								<td>$468.56</td>
-							</tr>							
-							<tr>
-								<td>Meals</td>
-								<td>Morning snack and Lunch</td>
-							</tr>
-					</table>
-				</div>
-			</div>
+					<div slot="right">
+						<section>
+							<table>
+								<tbody>
+									<tr>
+										<td>Drop off</td>
+										<td>9:00 AM</td>
+									</tr>
+									<tr>
+										<td>Pick up</td>
+										<td>2:45 PM</td>
+									</tr>
+									<tr>
+										<td>Days per week</td>
+										<td>5</td>
+									</tr>										
+									<tr>
+										<td>Monthly fee</td>
+										<td>$468.56</td>
+									</tr>							
+									<tr>
+										<td>Meals</td>
+										<td>Morning snack and Lunch</td>
+									</tr>
+							</table>
+						</section>
+					</div>
+				</TwoColumns>
 
-			<h2 style="margin: auto">Morning Program</h2>
-			<div class="hero">
-				<div class="roles">
+			<h2>Morning Program</h2>
+			<TwoColumns>
+				<section slot="left">
 					<p>
-						The Morning Program has space for 16 children supervised by one RECE and two duty parents (or one teacher). Mornings follow a loose routine that enables children to familiarize themselves with school life.
+						The Morning Program has space for 16 children, supervised by one RECE and two duty parents (or one teacher). Mornings follow a flexible routine that helps children become familiar with school life.
 					</p>
 					<p>
 					Each morning includes:
@@ -87,9 +89,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 						<li>healthy morning snack</li>
 						<li>outdoor play in the local park/green spaces</li>
 					</ul>	
-				</div>
-
-				<div class="roles">
+				</section>
+				<section slot="right">
 					<table>
 						<tbody>
 							<tr>
@@ -113,77 +114,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 								<td>Morning snack</td>
 							</tr>
 					</table>
-				</div>
-			</div>
+				</section>
+			</TwoColumns>
+
 
 
 		</main>
 	</div>
 </BaseLayout>
 
-
-<style>
-	.hero {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 1rem;
-	}
-	.hero a {
-		color: var(--gradient-subtle);
-		text-decoration: none;
-		transition: color var(--theme-transition);
-	}
-
-	.hero a:hover,
-	.hero a:focus {
-		color: var(--gray-0);
-	}
-
-	.roles {
-		margin-top: 0.5rem;
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-	.hero img {
-		aspect-ratio: 7 / 5;
-		object-fit: cover;
-		object-position: top;
-		border-radius: 1.5rem;
-	}
-	/* .hero h3 {
-		font-size: var(--text-2xl);
-		text-align: center;
-		margin-top: 1rem;
-	} */
-
-	@media (min-width: 50em) {
-		.hero {
-			display: grid;
-			grid-template-columns: 3fr 2fr;
-			padding-inline: 2.5rem;
-			gap: 1rem;
-		}
-
-		.hero img {
-			aspect-ratio: 7 / 5;
-			border-radius: 4.5rem;
-			object-fit: cover;
-		}
-		table {
-			min-width: 450px;
-		}
-	}
-
-	table {
-		padding: 10px;
-		margin: auto;
-		font-size: var(--text-lg);
-	}
-	tbody td:nth-child(2) { text-align: end; }
-	tbody td:nth-child(n) { border-bottom: 1px solid var(--accent-dark); }
-
-
-</style>
