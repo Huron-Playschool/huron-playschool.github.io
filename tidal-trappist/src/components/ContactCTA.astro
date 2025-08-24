@@ -1,0 +1,65 @@
+---
+import CallToAction from './CallToAction.astro';
+import Icon from './Icon.astro';
+---
+
+<aside>
+    <div class="stack gap-2 text-center">
+		<ul>
+			<li><Icon icon="envelope" size="1.5em"/><a href="mailto:registrar@huronplayschool.com">Contact Our Registrar</a></li>
+			<li><Icon icon="map-pin" size="1.5em" /><a href="https://maps.app.goo.gl/jqEYUc5Z1LSJFxn69" target="_blank">383 Huron St., Toronto, Ontario</a></li>
+			<li><Icon icon="phone" size="1.5em" /><a href="tel:4169771109">+1 (416) 977-1109</a></li>
+			<li><Icon icon="clock" size="1.5em" />Monday - Friday: 9 AM - 6 PM</li>
+		</ul>
+    </div>	
+	<CallToAction href="https://www.himama.com/online_registration/apply/huron-playschool">
+		Submit a request
+		<Icon icon="paper-plane-tilt" size="1.2em" />
+	</CallToAction>
+</aside>
+
+<style>
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		line-height: 2em;
+	}
+	aside {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+		/* border-top: 1px solid var(--gray-800); */
+		/* border-bottom: 1px solid var(--gray-800); */
+		padding-left: 3rem;
+		padding-right: 3rem;
+		padding-top: 1rem;
+		padding-bottom: 3rem;							
+		box-shadow: var(--shadow-sm);
+		margin-top: 3rem;
+	}
+
+	h2 {
+		font-size: var(--text-xl);
+		text-align: center;
+		max-width: 15ch;
+	}
+
+	@media (min-width: 50em) {
+		aside {
+			padding-left: 7rem;
+			padding-right: 7rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		h2 {
+			font-size: var(--text-3xl);
+			text-align: left;
+		}
+	}
+</style>

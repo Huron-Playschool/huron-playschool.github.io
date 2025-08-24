@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/programs.css';
+import TwoColumns from '../components/TwoColumns.astro';
+---
+
+<BaseLayout
+	title="Our programs | Huron Playschool"
+	description="Learn about Huron Playschool's programs"
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-10">
+			<h1>Our programs</h1>
+			<TwoColumns>
+				<section slot="left">
+					<h3>Our Approach</h3>
+					<p>
+						Our students are encouraged to care for each other and their environment, play co-operatively, develop their independence, and communicate their needs and interests.
+					</p>
+					<p>
+						Children learn at the Playschool through outdoor play, exploration in nature, gross motor movement, art, and sensory and imaginative play. The program includes regular excursions to local green spaces and parks. Field trips may include outings to libraries, museums, and special events.
+					</p>
+					<p>
+						Enrollment for any of our programs may begin at any time during the school year, and fees will be prorated accordingly.
+					</p>
+				</section>
+				<section slot="right">
+					<img
+						class="shadowbox"
+						alt=""
+						width="685"
+						height="500"
+						src="/assets/crayons.jpg"
+						alt="Children playing with crayons"
+					/>
+				</section>
+			</TwoColumns>
+
+			<h2 id="nursery">Nursery School</h2>
+
+			<p>
+				The program runs from September to June, with a two-week break during winter and it's aimed at children aged 2 to 6 years.
+			</p>
+			
+
+			<h3>Full Day Program</h3>
+			<TwoColumns>
+					<section slot="left">
+						<p>
+							The Full Day Program has space for 16 children, supervised by one Registered Early Childhood Educator (RECE) and two duty caregivers (or one teacher). Our days follow a flexible routine that helps children become familiar with school life.
+						</p>
+						<p>
+						Each day includes:
+						</p>
+						<ul>
+							<li>free play and planned activities</li>
+							<li>circle-time with music, storytelling and movement activities</li>
+							<li>healthy morning snack</li>
+							<li>healthy lunch</li>
+							<li>rest period (or naps for those who need it)</li>
+							<li>outdoor play in the local park/green spaces</li>
+						</ul>	
+					</section>
+
+					<div slot="right">
+						<section>
+							<table>
+								<tbody>
+									<tr>
+										<td>Drop off</td>
+										<td>9:00 AM</td>
+									</tr>
+									<tr>
+										<td>Pick up</td>
+										<td>2:45 PM</td>
+									</tr>
+									<tr>
+										<td>Days per week</td>
+										<td>5</td>
+									</tr>										
+									<tr>
+										<td>Monthly fee</td>
+										<td>$468.56</td>
+									</tr>							
+									<tr>
+										<td>Meals</td>
+										<td>Morning snack and Lunch</td>
+									</tr>
+							</table>
+						</section>
+					</div>
+			</TwoColumns>
+
+			<h3>Morning Program</h3>
+			<TwoColumns>
+				<section slot="left">
+					<p>
+						The Morning Program has space for 16 children, supervised by one RECE and two duty caregivers (or one teacher). Mornings follow a flexible routine that helps children become familiar with school life.
+					</p>
+					<p>
+					Each morning includes:
+					</p>
+					<ul>
+						<li>free play and planned activities</li>
+						<li>circle-time with music, storytelling and movement activities</li>
+						<li>healthy morning snack</li>
+						<li>outdoor play in the local park/green spaces</li>
+					</ul>	
+				</section>
+				<section slot="right">
+					<table>
+						<tbody>
+							<tr>
+								<td>Drop off</td>
+								<td>9:00 AM</td>
+							</tr>
+							<tr>
+								<td>Pick up</td>
+								<td>11:45 AM</td>
+							</tr>
+							<tr>
+								<td>Days per week</td>
+								<td>5</td>
+							</tr>										
+							<tr>
+								<td>Monthly fee</td>
+								<td>$258.14</td>
+							</tr>							
+							<tr>
+								<td>Meals</td>
+								<td>Morning snack</td>
+							</tr>
+					</table>
+				</section>
+			</TwoColumns>
+
+			<h2 id="summer">Summer Camp</h2>
+			<TwoColumns>
+				<section slot="left">
+					<h3>Summer fun!</h3>
+					<p>
+						Our summer camp program is designed to be fun and engaging for all children, with an increased focus on outdoor play and exploration, leveraging the green spaces and playgrounds located near the school. Wednesdays include outdoor waterplay (sprinkler, squeeze bottles, water toys, etc). Each week will have a theme as well.
+					</p>				
+					<p>
+						The school accepts students for summer camps on a monthly basis during July and August, with a break before the regular program starts. Our summer camp runs as a full day program and does not have a built-in naptime. It is available for children aged 2.5 to 6 years. 
+					</p>
+
+				</section>
+				<section slot="right">
+					<img
+						class="shadowbox"
+						alt=""
+						width="685"
+						height="500"
+						src="/assets/ncts-hanging.jpg"
+						alt="Children hanging upside down in a playground ladder"
+					/>
+				</section>
+			</TwoColumns>
+
+
+
+		</main>
+	</div>
+</BaseLayout>
+

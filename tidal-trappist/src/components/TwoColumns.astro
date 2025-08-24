@@ -1,0 +1,28 @@
+---
+---
+<div class="two-column-container">
+  <div class="column left">
+    <slot name="left" />
+  </div>
+  <div class="column right">
+    <slot name="right" />
+  </div>
+</div>
+
+<style>
+  .two-column-container {
+    display: flex; /* Or display: grid; for more control */
+    gap: 1.5rem; /* Adjust as needed for spacing between columns */
+  }
+
+  .column {
+    flex: 1; /* Or define specific widths with grid-template-columns */
+  }
+
+  /* Add responsive adjustments for smaller screens if desired */
+  @media (max-width: 768px) {
+    .two-column-container {
+      flex-direction: column; /* Stack columns vertically on small screens */
+    }
+  }
+</style>

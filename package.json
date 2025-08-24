@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@iconify-json/fa": "^1.2.1",
-    "astro": "^5.10.2"
-  }
-}

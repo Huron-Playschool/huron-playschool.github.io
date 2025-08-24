@@ -1,0 +1,35 @@
+/* nursery.css */
+    @media (min-width: 50em) {
+        table {
+            min-width: 450px;
+        }
+    }
+
+    table {
+        padding: 10px;
+        margin: auto;
+        font-size: var(--text-lg);
+    }
+    tbody td:nth-child(2) { text-align: end; }
+    tbody td:nth-child(n) { border-bottom: 1px solid var(--accent-dark); }
+
+    h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 2rem 0 1rem;
+        text-align: center;
+    }
+    h3 {
+        margin: 1.5rem 0;
+    }
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+	}
+
+	.shadowbox {
+		box-shadow: var(--shadow-md);
+	}
